@@ -1,11 +1,30 @@
 import { useState } from "react";
 import "./App.css";
+import { MusicList } from "./components/MusicList";
+import { Monitor } from "./components/Monitor";
+import music from "./data/music.json";
 
 function App() {
   const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
+  const [selectedTrack, setSelectedTrack] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  console.log("isLeftPanelOpen", isLeftPanelOpen);
+  const selectTrack = (track) => {
+    setSelectedTrack(track);
+  };
+
+  const selectRelativeTrack = (offset) => {
+    const currentIndex = music.findIndex(
+      (track) => track._id === selectedTrack?._id,
+    );
+    const nextIndex =
+      currentIndex < 0
+        ? 0
+        : (currentIndex + offset + music.length) % music.length;
+
+    setSelectedTrack(music[nextIndex]);
+  };
 
   return (
     <main className="artwork" aria-label="Centered portrait artwork">
@@ -16,7 +35,21 @@ function App() {
           src="/images/head.png"
           alt="Green-toned portrait with closed eyes"
         />
-        <img className="artwork__forehead" src="/images/forehead.png" alt="" />
+        <div className="monitor">
+          <img
+            className="artwork__forehead"
+            src="/images/forehead.png"
+            alt=""
+          />
+          <div className="monitor__view">
+            <Monitor
+              track={selectedTrack}
+              onPrevious={() => selectRelativeTrack(-1)}
+              onNext={() => selectRelativeTrack(1)}
+              onPlaybackStateChange={setIsPlaying}
+            />
+          </div>
+        </div>
         <div className="left-panel">
           <div className="panel-wrap panel-wrap__left">
             <div className="panel-speaker">
@@ -52,6 +85,13 @@ function App() {
                 alt=""
                 aria-hidden="true"
               />
+              <div className="music-list">
+                <MusicList
+                  onTrackSelect={selectTrack}
+                  selectedTrackId={selectedTrack?._id}
+                  isPlaying={isPlaying}
+                />
+              </div>
             </div>
           </div>
         </div>

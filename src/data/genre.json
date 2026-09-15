@@ -1,0 +1,267 @@
+[
+  {
+    "_id": "aB7kP2mQ9xL4dR8s",
+    "name": "synth pop",
+    "slug": "synth-pop"
+  },
+  {
+    "_id": "Z4nT8qW1eK6pV3rM",
+    "name": "alt pop",
+    "slug": "alt-pop"
+  },
+  {
+    "_id": "hQ5R2vN8cJ1mX7pL",
+    "name": "dance pop",
+    "slug": "dance-pop"
+  },
+  {
+    "_id": "Y6sD3fG9kA2wP8tC",
+    "name": "disco pop",
+    "slug": "disco-pop"
+  },
+  {
+    "_id": "mR8bV4xK1qT7nL5d",
+    "name": "pop rock",
+    "slug": "pop-rock"
+  },
+  {
+    "_id": "P3jH9wS6eN2zQ8cV",
+    "name": "folk rock",
+    "slug": "folk-rock"
+  },
+  {
+    "_id": "uK7dM1rF5yB9pW3x",
+    "name": "alt rock",
+    "slug": "alt-rock"
+  },
+  {
+    "_id": "C8vL2nJ6sQ4hT9mR",
+    "name": "afrobeats",
+    "slug": "afrobeats"
+  },
+  {
+    "_id": "fN5xP8kD2aR7wG1z",
+    "name": "reggaeton",
+    "slug": "reggaeton"
+  },
+  {
+    "_id": "W2qV6mH9tK3sB7eL",
+    "name": "piano pop",
+    "slug": "piano-pop"
+  },
+  {
+    "_id": "rA9cX4pM7nF1dJ6v",
+    "name": "orchestral pop",
+    "slug": "orchestral-pop"
+  },
+  {
+    "_id": "T5yL8bQ2wC6kN1sR",
+    "name": "disco",
+    "slug": "disco"
+  },
+  {
+    "_id": "gJ3mV7xP9hD4qK2n",
+    "name": "funk pop",
+    "slug": "funk-pop"
+  },
+  {
+    "_id": "N1eR6tW4zB8pF3cX",
+    "name": "soul",
+    "slug": "soul"
+  },
+  {
+    "_id": "kM9qH2vS5dL7xA4r",
+    "name": "electropop",
+    "slug": "electropop"
+  },
+  {
+    "_id": "X7cP3nT8wJ1mV6sK",
+    "name": "tropical house",
+    "slug": "tropical-house"
+  },
+  {
+    "_id": "bF4rQ9yL2kN6hW8m",
+    "name": "pop",
+    "slug": "pop"
+  },
+  {
+    "_id": "V8sK1dR5pC7xM3qH",
+    "name": "dancehall",
+    "slug": "dancehall"
+  },
+  {
+    "_id": "jT6nB2wG9mP4vL8z",
+    "name": "piano ballad",
+    "slug": "piano-ballad"
+  },
+  {
+    "_id": "Q3xH7kN1rW5cD9pM",
+    "name": "hip hop",
+    "slug": "hip-hop"
+  },
+  {
+    "_id": "dL8vS4mJ2qR6tX1b",
+    "name": "pop rap",
+    "slug": "pop-rap"
+  },
+  {
+    "_id": "M5pC9wK3nF7hV2qR",
+    "name": "r&b",
+    "slug": "r-and-b"
+  },
+  {
+    "_id": "xA2mT8rG4kP1dN7v",
+    "name": "teen pop",
+    "slug": "teen-pop"
+  },
+  {
+    "_id": "R7qB3nL9wH5sJ1cK",
+    "name": "power pop",
+    "slug": "power-pop"
+  },
+  {
+    "_id": "pV4dX8mQ2kT6rN9a",
+    "name": "doo wop",
+    "slug": "doo-wop"
+  },
+  {
+    "_id": "K1sF7yC3vM9bP5wH",
+    "name": "reggae fusion",
+    "slug": "reggae-fusion"
+  },
+  {
+    "_id": "nJ6R2qW8dL4xS9mB",
+    "name": "new wave",
+    "slug": "new-wave"
+  },
+  {
+    "_id": "H9cT5pV1kN7rQ3zM",
+    "name": "indie rock",
+    "slug": "indie-rock"
+  },
+  {
+    "_id": "wG3mL8xD2sF6qK1P",
+    "name": "future bass",
+    "slug": "future-bass"
+  },
+  {
+    "_id": "S4vN9bR5hJ2tC7yL",
+    "name": "trap electronic music",
+    "slug": "trap-electronic-music"
+  },
+  {
+    "_id": "qP7kM3dW1xV8nF5R",
+    "name": "neo soul",
+    "slug": "neo-soul"
+  },
+  {
+    "_id": "B2rH6sQ9mK4cT8vN",
+    "name": "funk",
+    "slug": "funk"
+  },
+  {
+    "_id": "tX5nJ1wL7pD3kV9s",
+    "name": "pop soul",
+    "slug": "pop-soul"
+  },
+  {
+    "_id": "F8mC2qR6yN4hP1xK",
+    "name": "bubblegum pop",
+    "slug": "bubblegum-pop"
+  },
+  {
+    "_id": "vD9sL5kB2wM7rQ3J",
+    "name": "nudisco",
+    "slug": "nudisco"
+  },
+  {
+    "_id": "J3pV8nT1cH6xR4mQ",
+    "name": "arena rock",
+    "slug": "arena-rock"
+  },
+  {
+    "_id": "E6qK2wS9dP5bN7vL",
+    "name": "alternative rock",
+    "slug": "alternative-rock"
+  },
+  {
+    "_id": "yR4mC8hJ1tW6kF3p",
+    "name": "dance pop ballad",
+    "slug": "dance-pop-ballad"
+  },
+  {
+    "_id": "L7nB3xQ5vM9sD2rK",
+    "name": "post grunge",
+    "slug": "post-grunge"
+  },
+  {
+    "_id": "cW1pT6kH8qN4mV9s",
+    "name": "country pop",
+    "slug": "country-pop"
+  },
+  {
+    "_id": "N8dF2rJ5xL1vQ7mC",
+    "name": "pop punk",
+    "slug": "pop-punk"
+  },
+  {
+    "_id": "sM6qK9wB3pR1tX8h",
+    "name": "dream pop",
+    "slug": "dream-pop"
+  },
+  {
+    "_id": "V2mH7cP4nD8xL1qR",
+    "name": "reggae pop",
+    "slug": "reggae-pop"
+  },
+  {
+    "_id": "kQ5tN1vS8rJ3wM7d",
+    "name": "roots reggae",
+    "slug": "roots-reggae"
+  },
+  {
+    "_id": "P9xC4mL2hF6qT8nV",
+    "name": "ska",
+    "slug": "ska"
+  },
+  {
+    "_id": "dR7wB3kN9sV1pJ5M",
+    "name": "soda pop",
+    "slug": "soda-pop"
+  },
+  {
+    "_id": "A4nT8qM2xH6vL9cP",
+    "name": "k-pop",
+    "slug": "k-pop"
+  },
+  {
+    "_id": "zK1pF5rW7mD3sN8Q",
+    "name": "trap",
+    "slug": "trap"
+  },
+  {
+    "_id": "G6vJ2cR9tB4xP1mH",
+    "name": "edm",
+    "slug": "edm"
+  },
+  {
+    "_id": "mS8qL3nV5kC1wF7R",
+    "name": "parody",
+    "slug": "parody"
+  },
+  {
+    "_id": "Q7dP2hN9xM4rT6bK",
+    "name": "novelty song",
+    "slug": "novelty-song"
+  },
+  {
+    "_id": "wL5cR1vJ8sD3mK9P",
+    "name": "comedy",
+    "slug": "comedy"
+  },
+  {
+    "_id": "F2nH7qB4xV9kM1tS",
+    "name": "musical parody",
+    "slug": "musical-parody"
+  }
+]

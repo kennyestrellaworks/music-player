@@ -1,0 +1,378 @@
+#root {
+  min-height: 100vh;
+}
+
+.artwork {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: #0d140d;
+}
+
+.artwork__glow {
+  position: absolute;
+  z-index: -1;
+  width: min(75vw, 760px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #587d1e;
+  filter: blur(110px);
+  opacity: 0.24;
+}
+
+.artwork__composition {
+  position: relative;
+  width: min(94vw, 1440px);
+  height: min(92svh, 920px);
+  animation: reveal 900ms ease-out both;
+}
+
+.artwork__head {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 28px 46px rgba(0, 0, 0, 0.35));
+}
+
+.artwork__forehead {
+  position: absolute;
+  z-index: 4;
+  top: -91px;
+  left: 0;
+  right: 0;
+  width: 399px;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.left-panel {
+  position: absolute;
+  z-index: 3;
+  top: 200px;
+  left: 0;
+  width: 537px;
+  height: 249px;
+  overflow: hidden;
+  transition: width 220ms ease;
+}
+
+.right-panel {
+  position: absolute;
+  z-index: 3;
+  top: 200px;
+  right: 0;
+  width: 537px;
+  height: 249px;
+}
+
+.panel-wrap__right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.panel-wrap__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.artwork__panel {
+  position: absolute;
+  z-index: 3;
+  top: 15%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.left-panel .artwork__panel {
+  position: relative;
+  top: auto;
+  left: auto;
+  height: 100%;
+}
+
+.right-panel .artwork__panel {
+  position: relative;
+  top: auto;
+  right: auto;
+  height: 100%;
+}
+
+.left-panel__content,
+.right-panel__content {
+  width: 60%;
+  position: relative;
+}
+
+.left-panel__content {
+  overflow: hidden;
+  height: 249px;
+  transition: width 220ms ease;
+}
+
+.left-panel__content.is-collapsed {
+  width: 0;
+}
+
+.music-list {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+
+.right-panel__content {
+  overflow: hidden;
+  height: 249px;
+  transition: width 220ms ease;
+}
+
+.right-panel__content.is-collapsed {
+  width: 0;
+}
+
+.panel-open__left {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  object-fit: fill;
+}
+
+.panel-open__left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.panel-open__right {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: fill;
+}
+
+.artwork__panel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.artwork__panel--left,
+.artwork__panel--right {
+  height: 316px;
+  top: 139px;
+}
+
+.panel-speaker {
+  position: relative;
+}
+
+.panel-button__arrow-left,
+.panel-button__arrow-right {
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.panel-button__arrow-left svg,
+.panel-button__arrow-right svg {
+  fill: rgb(94, 94, 94);
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition:
+    fill 220ms ease,
+    transform 220ms ease;
+}
+
+.panel-button__arrow-left[aria-expanded="false"] svg,
+.panel-button__arrow-right[aria-expanded="false"] svg {
+  transform: rotate(180deg);
+}
+
+.panel-button__arrow-left:hover svg,
+.panel-button__arrow-right:hover svg {
+  fill: rgb(57, 57, 57);
+}
+
+.panel-button__arrow-left {
+  left: -29px;
+}
+
+.panel-button__arrow-right {
+  right: -29px;
+}
+
+.panel-button {
+  position: absolute;
+  z-index: 3;
+  top: 64px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.panel-button__left,
+.panel-button__right {
+  height: 112px;
+}
+
+.panel-button__left {
+  left: -30px;
+}
+
+.panel-button__right {
+  right: -30px;
+}
+
+.monitor {
+  position: absolute;
+  z-index: 40;
+  top: -91px;
+  left: 0;
+  right: 0;
+  width: 399px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.monitor__view {
+  position: absolute;
+  z-index: 45;
+  top: 33%;
+  left: 50%;
+  width: 86%;
+  height: 33%;
+  padding: 11px 11px 18px;
+  overflow: hidden;
+  border: 3px solid #283126;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #3b4938 0%, #182018 48%, #0d120e 100%);
+  box-shadow:
+    inset 0 1px 1px rgba(220, 240, 190, 0.2),
+    inset 0 -5px 8px rgba(0, 0, 0, 0.55),
+    0 10px 18px rgba(0, 0, 0, 0.42);
+  transform: translateX(-50%);
+}
+
+.monitor__view .monitor__content {
+  inset: 11px 11px 18px;
+}
+
+.monitor__view::before {
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+  z-index: 3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #b7d86f;
+  box-shadow: 0 0 7px rgba(183, 216, 111, 0.8);
+  content: "";
+}
+
+.monitor__view::after {
+  position: absolute;
+  right: 23px;
+  bottom: 8px;
+  width: 22px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(218, 232, 198, 0.32);
+  content: "";
+}
+
+.monitor > .artwork__forehead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .artwork__composition {
+    width: 112vw;
+    height: 88svh;
+  }
+
+  .artwork__head {
+    width: 82%;
+  }
+
+  /* .artwork__forehead {
+    width: 51.2%;
+  } */
+
+  .artwork__panel {
+    top: 18%;
+    width: 20%;
+    height: 48%;
+  }
+
+  .left-panel {
+    top: 18%;
+    left: 1%;
+    width: 20%;
+    height: 48%;
+  }
+
+  .right-panel {
+    top: 18%;
+    right: 1%;
+    width: 20%;
+    height: 48%;
+  }
+
+  .artwork__glow {
+    width: 120vw;
+    filter: blur(80px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .artwork__composition {
+    animation: none;
+  }
+}

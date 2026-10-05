@@ -1,9 +1,30 @@
 import { useState } from "react";
 import "./App.css";
+import { MusicList } from "./components/MusicList";
+import { Monitor } from "./components/Monitor";
+import music from "./data/music.json";
 
-export const App = () => {
+function App() {
   const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
+  const [selectedTrack, setSelectedTrack] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const selectTrack = (track) => {
+    setSelectedTrack(track);
+  };
+
+  const selectRelativeTrack = (offset) => {
+    const currentIndex = music.findIndex(
+      (track) => track._id === selectedTrack?._id,
+    );
+    const nextIndex =
+      currentIndex < 0
+        ? 0
+        : (currentIndex + offset + music.length) % music.length;
+
+    setSelectedTrack(music[nextIndex]);
+  };
 
   return (
     <main className="artwork" aria-label="Centered portrait artwork">
@@ -14,30 +35,33 @@ export const App = () => {
           src="/images/head.png"
           alt="Green-toned portrait with closed eyes"
         />
-        {/* Left panel */}
+        <div className="monitor">
+          <img
+            className="artwork__forehead"
+            src="/images/forehead.png"
+            alt=""
+          />
+          <div className="monitor__view">
+            <Monitor
+              track={selectedTrack}
+              onPrevious={() => selectRelativeTrack(-1)}
+              onNext={() => selectRelativeTrack(1)}
+              onPlaybackStateChange={setIsPlaying}
+            />
+          </div>
+        </div>
         <div className="left-panel">
           <div className="panel-wrap panel-wrap__left">
             <div className="panel-speaker">
               <button
                 className="panel-button__arrow-left"
-                aria-expanded={isLeftPanelOpen}
                 type="button"
+                aria-expanded={isLeftPanelOpen}
                 aria-controls="left-panel-content"
                 onClick={() => setIsLeftPanelOpen((isOpen) => !isOpen)}
               >
-                <svg
-                  viewBox="-0.5 0 7 7"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g transform="translate(-347.000000, -3766.000000)">
-                    <g id="icons" transform="translate(56.000000, 160.000000)">
-                      <path
-                        d="M296.494737,3608.57322 L292.500752,3606.14219 C291.83208,3605.73542 291,3606.25002 291,3607.06891 L291,3611.93095 C291,3612.7509 291.83208,3613.26444 292.500752,3612.85767 L296.494737,3610.42771 C297.168421,3610.01774 297.168421,3608.98319 296.494737,3608.57322"
-                        id="play-[#1003]"
-                      ></path>
-                    </g>
-                  </g>
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M338.752 104.704a64 64 0 000 90.496l316.8 316.8-316.8 316.8a64 64 0 0090.496 90.496l362.048-362.048a64 64 0 000-90.496L429.248 104.704a64 64 0 00-90.496 0z" />
                 </svg>
               </button>
               <img
@@ -61,11 +85,16 @@ export const App = () => {
                 alt=""
                 aria-hidden="true"
               />
-              <div className="music-list">THIS</div>
+              <div className="music-list">
+                <MusicList
+                  onTrackSelect={selectTrack}
+                  selectedTrackId={selectedTrack?._id}
+                  isPlaying={isPlaying}
+                />
+              </div>
             </div>
           </div>
         </div>
-        {/* Right panel */}
         <div className="right-panel">
           <div className="panel-wrap panel-wrap__right">
             <div
@@ -77,29 +106,19 @@ export const App = () => {
                 src="/images/panel-open-bg.png"
                 alt=""
                 aria-hidden="true"
-              />
+              />{" "}
+              <div className="music-list">THIS</div>
             </div>
             <div className="panel-speaker">
               <button
                 className="panel-button__arrow-right"
-                aria-expanded={isRightPanelOpen}
                 type="button"
+                aria-expanded={isRightPanelOpen}
                 aria-controls="right-panel-content"
                 onClick={() => setIsRightPanelOpen((isOpen) => !isOpen)}
               >
-                <svg
-                  viewBox="-0.5 0 7 7"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g transform="translate(-347.000000, -3766.000000)">
-                    <g id="icons" transform="translate(56.000000, 160.000000)">
-                      <path
-                        d="M296.494737,3608.57322 L292.500752,3606.14219 C291.83208,3605.73542 291,3606.25002 291,3607.06891 L291,3611.93095 C291,3612.7509 291.83208,3613.26444 292.500752,3612.85767 L296.494737,3610.42771 C297.168421,3610.01774 297.168421,3608.98319 296.494737,3608.57322"
-                        id="play-[#1003]"
-                      ></path>
-                    </g>
-                  </g>
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z" />
                 </svg>
               </button>
               <img
@@ -118,4 +137,6 @@ export const App = () => {
       </div>
     </main>
   );
-};
+}
+
+export default App;

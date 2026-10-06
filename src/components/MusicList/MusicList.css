@@ -1,0 +1,294 @@
+.music-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+}
+
+.music-list__search {
+  width: 100%;
+  padding: 6px 70px 6px 11px;
+  border: 1px solid rgba(218, 232, 198, 0.35);
+  border-radius: 8px;
+  outline: none;
+  color: #f2f6e9;
+  background: rgba(13, 20, 13, 0.82);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.music-list__search-wrap {
+  position: relative;
+  z-index: 21;
+}
+
+.music-list__filter {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.music-list__search-field {
+  position: relative;
+  flex: 1;
+}
+
+button.music-list__artist {
+  flex-shrink: 0;
+  /* min-width: 72px; */
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #888888;
+  color: #111;
+  font: inherit;
+  font-size: 0.72rem;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 300;
+  text-shadow: none;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+button.music-list__artist--active {
+  color: #fff;
+  background: #8f38c8;
+}
+
+button.music-list__artist:hover,
+button.music-list__artist:focus-visible {
+  opacity: 0.96;
+}
+
+button.music-list__artist:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.music-list__search::placeholder {
+  color: rgba(242, 246, 233, 0.62);
+}
+
+.music-list__search:focus {
+  border-color: #b7d86f;
+  box-shadow: 0 0 0 3px rgba(183, 216, 111, 0.18);
+}
+
+.music-list__search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  color: #b7d86f;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.music-list__search-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.music-list__dropdown {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  max-height: 190px;
+  overflow-y: auto;
+  background: rgba(28, 42, 28, 0.82);
+  border-radius: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(183, 216, 111, 0.7) transparent;
+}
+
+.music-list__dropdown::-webkit-scrollbar {
+  width: 10px;
+}
+
+.music-list__dropdown::-webkit-scrollbar-track {
+  background: rgba(12, 18, 12, 0.55);
+  border-radius: 999px;
+}
+
+.music-list__dropdown::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c7ec75 0%, #9ecb4a 100%);
+  border: 2px solid rgba(12, 18, 12, 0.7);
+  border-radius: 999px;
+}
+
+.music-list__dropdown::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d8f08b 0%, #afd85a 100%);
+}
+
+.music-list__item {
+  position: relative;
+  width: 100%;
+  padding: 4px 42px 4px 8px;
+  border: 1px solid rgba(218, 232, 198, 0.2);
+  border-radius: 6px;
+  background: rgba(16, 24, 16, 0.72);
+  color: #f2f6e9;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.music-list__item.is-active {
+  border-color: rgba(183, 216, 111, 0.95);
+  background: linear-gradient(
+    135deg,
+    rgba(82, 113, 44, 0.95),
+    rgba(40, 67, 35, 0.95)
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(199, 236, 117, 0.22),
+    0 0 12px rgba(183, 216, 111, 0.18);
+}
+
+.music-list__item:hover,
+.music-list__item:focus-visible {
+  border-color: rgba(183, 216, 111, 0.7);
+  background: rgba(28, 42, 28, 0.82);
+  transform: translateY(-1px);
+}
+
+.music-list__title {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+span.music-list__artist-name {
+  display: block;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  color: rgba(242, 246, 233, 0.7);
+  overflow-wrap: anywhere;
+}
+
+.music-list__artist-item {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid rgba(218, 232, 198, 0.2);
+  border-radius: 6px;
+  background: rgba(16, 24, 16, 0.72);
+  color: #f2f6e9;
+  text-align: left;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.music-list__artist-item:hover,
+.music-list__artist-item:focus-visible {
+  border-color: rgba(183, 216, 111, 0.7);
+  background: rgba(28, 42, 28, 0.82);
+  transform: translateY(-1px);
+}
+
+.music-list__playing {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+}
+
+.music-list__playing span {
+  display: block;
+  width: 3px;
+  height: 7px;
+  border-radius: 3px;
+  background: #d8f08b;
+  animation: music-list-playing 760ms ease-in-out infinite alternate;
+}
+
+.music-list__playing span:nth-child(2) {
+  animation-delay: -180ms;
+}
+
+.music-list__playing span:nth-child(3) {
+  animation-delay: -360ms;
+}
+
+.music-list__playing span:nth-child(4) {
+  animation-delay: -540ms;
+}
+
+@keyframes music-list-playing {
+  from {
+    height: 5px;
+    opacity: 0.55;
+  }
+
+  to {
+    height: 16px;
+    opacity: 1;
+  }
+}
+
+.music-list__empty {
+  margin: 0;
+  padding: 12px 10px;
+  border: 1px dashed rgba(218, 232, 198, 0.28);
+  border-radius: 8px;
+  color: rgba(242, 246, 233, 0.8);
+  background: rgba(13, 20, 13, 0.35);
+}
+
+.music-list__search::-webkit-search-cancel-button,
+.music-list__search::-webkit-search-decoration {
+  display: none;
+  appearance: none;
+}
+
+.music-list__clear-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border: 0;
+  border-radius: 50%;
+  color: #b7d86f;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.music-list__clear-search:hover,
+.music-list__clear-search:focus-visible {
+  color: #e1f79a;
+  background: rgba(183, 216, 111, 0.16);
+}
+
+.music-list__clear-search svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

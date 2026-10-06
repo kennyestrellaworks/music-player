@@ -1,0 +1,171 @@
+.orb {
+  /* ---- Public tunables (driven by props) ---- */
+  --orb-size: 50px;
+  --orb-color: #8f38c8;
+  /* --orb-border-color: #b1d394cc; */
+  --orb-border-width: 6px;
+
+  /* ---- Palette derived from --orb-color ---- */
+  --orb-stop-1: color-mix(in srgb, var(--orb-color) 85%, #fff);
+  --orb-stop-2: color-mix(in srgb, var(--orb-color) 65%, #fff);
+  --orb-stop-3: color-mix(in srgb, var(--orb-color) 92%, #000);
+  --orb-stop-4: color-mix(in srgb, var(--orb-color) 65%, #000);
+  --orb-core-1: color-mix(in srgb, var(--orb-color) 62%, #fff);
+  --orb-core-2: color-mix(in srgb, var(--orb-color) 75%, #fff);
+
+  /* ---- Reset ---- */
+  appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  color: #43256b;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  /* ---- Shape / layout ---- */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--orb-size);
+  height: var(--orb-size);
+  /* border: var(--orb-border-width) solid var(--orb-border-color); */
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+
+  /* ---- Body ---- */
+  background:
+    radial-gradient(
+      ellipse at 50% 48%,
+      var(--orb-core-1) 0%,
+      var(--orb-core-2) 30%,
+      transparent 65%
+    ),
+    linear-gradient(
+      220deg,
+      var(--orb-color) 0%,
+      var(--orb-stop-1) 35%,
+      var(--orb-stop-2) 60%,
+      var(--orb-stop-3) 82%,
+      var(--orb-stop-4) 100%
+    );
+  /* 
+  box-shadow:
+    0 0 4px color-mix(in srgb, var(--orb-border-color) 90%, transparent),
+    inset 0 0 8px #ffffff1f; */
+
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
+}
+
+/* ---- Highlights (unchanged, but now proportional ---- */
+.orb::before,
+.orb::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 60% 0%,
+    #ffffffb3 0%,
+    #ffffff66 35%,
+    #ffffff26 65%,
+    #ffffff00 90%
+  );
+}
+
+.orb::before {
+  width: 70.7%;
+  height: 70.7%;
+  top: 3.6%;
+  left: 14.5%;
+}
+
+.orb::after {
+  width: 36.2%;
+  height: 36.2%;
+  top: 7.2%;
+  left: 43.5%;
+}
+
+/* ---- Label sits above the pseudo-elements ---- */
+/* .orb__label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+} */
+
+.orb__label > svg,
+.orb__label svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ---- States ---- */
+.orb:hover {
+  filter: brightness(1.07);
+}
+
+.orb:active {
+  transform: scale(0.97);
+}
+
+/* .orb:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--orb-border-color) 75%, #fff);
+  outline-offset: 4px;
+} */
+
+.orb:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.6) brightness(0.9);
+  opacity: 0.45;
+}
+
+.simple-button {
+  /* min-width: 72px; */
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 6px;
+  color: #111;
+  background: #888888;
+  font: inherit;
+  font-size: 0.72rem;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 300;
+  text-shadow: none;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.button.simple-button--active,
+.simple-button.simple-button--active {
+  color: #fff;
+  background: #8f38c8 !important;
+}
+
+.simple-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb {
+    transition: none;
+  }
+}

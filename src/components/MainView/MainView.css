@@ -1,0 +1,157 @@
+.main-view {
+  position: absolute;
+  z-index: 70;
+  top: 84px;
+  left: 50%;
+  width: min(80vw, 378px);
+  height: 280px;
+  padding: 18px 22px 20px;
+  border-radius: 90px 90px 52px 52px;
+  /* background: linear-gradient(180deg, #9ecf4d 0%, #7ebd3a 100%); */
+  /* box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -12px 18px rgba(29, 58, 12, 0.2),
+    0 14px 30px rgba(10, 18, 10, 0.28); */
+  transform: translateX(-50%);
+}
+
+.main-view__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.main-view__controls .forward-btn svg {
+  /* style={{ transform: "scaleX(-1)" }} */
+  transform: scaleX(-1);
+}
+
+.main-view__controls .sunburst-btn {
+  margin-left: 10px;
+}
+
+.main-view__button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #f2f6e9;
+  cursor: pointer;
+  box-shadow:
+    inset 0 2px 3px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.main-view__button span {
+  display: block;
+  line-height: 1;
+}
+
+.main-view__button--prev,
+.main-view__button--pause,
+.main-view__button--play,
+.main-view__button--next {
+  background: linear-gradient(180deg, #6b4ec5 0%, #4b2d8e 100%);
+}
+
+.main-view__button--power {
+  background: linear-gradient(180deg, #f6d85d 0%, #d7b638 100%);
+  color: #2a2206;
+}
+
+.main-view__button--pause {
+  font-size: 1.05rem;
+}
+
+.main-view__button--play {
+  font-size: 1.3rem;
+}
+
+.main-view__display {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 185px;
+  padding: 18px 16px 12px;
+  border-radius: 18px 18px 14px 14px;
+  background: linear-gradient(180deg, #2d2d2d 0%, #121212 100%);
+  box-shadow:
+    inset 0 4px 8px rgba(255, 255, 255, 0.04),
+    inset 0 -8px 12px rgba(0, 0, 0, 0.45),
+    0 10px 16px rgba(12, 14, 12, 0.38);
+}
+
+.main-view__visual {
+  width: 100%;
+}
+
+.visualizer-view {
+  width: 100%;
+}
+
+.track-progress {
+  display: block;
+  width: 100%;
+  height: 12px;
+  margin-top: 2px;
+  accent-color: #b7d86f;
+  cursor: pointer;
+}
+
+.track-progress:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.main-view__controls-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.main-view__volume {
+  display: flex;
+  align-items: center;
+  /* gap: 4px; */
+  width: 140px;
+}
+
+.main-view__volume-button {
+  display: grid;
+  flex: 0 0 22px;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main-view__volume-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.main-view__volume-button:disabled,
+.main-view__volume-slider:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.main-view__volume-slider {
+  width: 100%;
+  height: 10px;
+  accent-color: #b7d86f;
+  cursor: pointer;
+}

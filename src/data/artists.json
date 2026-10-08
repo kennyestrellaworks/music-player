@@ -33,6 +33,103 @@
     ]
   },
   {
+    "_id": "N1mehq9C3Ki8W14iL06pqN1mehq86o110Qf",
+    "name": "Tom Waits",
+    "songs": [
+      {
+        "_id": "DH2f4X5A29bz7DINbJmTB6621Z6kQr0",
+        "title": "Boots on the Ground",
+        "artist": "Massive Attack & Tom Waits",
+        "file": "/mp3/MassiveAttackAndTomWaitsBootsontheGroundLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "w2q4Z79dQyGeo2e46N207VN9166t",
+        "title": "Hold On",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsHoldOnLyricsTheWalkingDead.mp3",
+        "releasedYear": 1999
+      },
+      {
+        "_id": "PAPJ798J47kh0z8Z575Gxa76Yr36",
+        "title": "If I Have To Go",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsIfIHaveToGoLyricsOnScreen.mp3",
+        "releasedYear": 2006
+      },
+      {
+        "_id": "cfiDd34De2824zWx83p7a2784NU2",
+        "title": "I Hope That I Don't Fall In Love With You",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsIhopethatIdon'tfallinlovewithyoulyrics.mp3",
+        "releasedYear": 1973
+      },
+      {
+        "_id": "0Iy4ua4l5c17qPL218if9K2R21s3",
+        "title": "Jockey Full Of Bourbon",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsJockeyFullOfBourbonLyrics.mp3",
+        "releasedYear": 1985
+      },
+      {
+        "_id": "CnV8Tc5oU177U5t46WN26IM9y855",
+        "title": "Looking for The Heart of Saturday Night",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsLookingforTheHeartofSaturdayNightLyrics.mp3",
+        "releasedYear": 1974
+      },
+      {
+        "_id": "CH7D1WC0pa5JT6231K71360i4OZx",
+        "title": "Martha",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsMarthaLyrics.mp3",
+        "releasedYear": 1973
+      },
+      {
+        "_id": "oAUi6edk2138d005is68W44ba7T8",
+        "title": "New Coat of Paint",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsNewCoatofPaintLyrics.mp3",
+        "releasedYear": 1974
+      },
+      {
+        "_id": "u4Hqw8hk6Ji87r16PsT1988648eq",
+        "title": "Shiver Me Timbers",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsShiverMeTimbersLyrics.mp3",
+        "releasedYear": 1974
+      },
+      {
+        "_id": "13d3QiC90R2fL75BIrcB9q612r39",
+        "title": "A Little Rain",
+        "artist": "Tom Waits",
+        "file": "/mp3/ALittleRainTomWaitsLyricVideoBoneMachine1992.mp3",
+        "releasedYear": 1992
+      },
+      {
+        "_id": "k9wNzZ6b04Cw094zx64422ZP4S6X",
+        "title": "All The World is Green",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsAllTheWorldisGreenwithLyrics.mp3",
+        "releasedYear": 2002
+      },
+      {
+        "_id": "UwszB8e80p47950XG47rTh59ff65",
+        "title": "Come On Up To The House",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsComeOnUpToTheHouselyrics.mp3",
+        "releasedYear": 1999
+      },
+      {
+        "_id": "Wf1XY2s9Ye82S2bw336Y906Sw5u3",
+        "title": "Drunk on the Moon",
+        "artist": "Tom Waits",
+        "file": "/mp3/TomWaitsDrunkontheMoonLyrics.mp3",
+        "releasedYear": 1974
+      }
+    ]
+  },
+  {
     "_id": "5ay46314iL06pqN1mehq86o110Qf",
     "name": "Alex Warren",
     "songs": [
@@ -443,6 +540,97 @@
         "artist": "The Strokes",
         "file": "/mp3/THESTROKESGOINGSHOPPINGLYRICS.mp3",
         "releasedYear": 2026
+      },
+      {
+        "_id": "8Id182kY779S30M2a99P1ITQqQc0",
+        "title": "Last Nite",
+        "artist": "The Strokes",
+        "file": "/mp3/LastNiteTheStrokeswithLyrics.mp3",
+        "releasedYear": 2001
+      },
+      {
+        "_id": "9nyebLA6X9lDI7815TX8721L3O73",
+        "title": "Reptilia",
+        "artist": "The Strokes",
+        "file": "/mp3/ReptiliaThestrokesLyrics.mp3",
+        "releasedYear": 2004
+      },
+      {
+        "_id": "J3P8IKS9swt950pwH5Xy9k172496",
+        "title": "12:51",
+        "artist": "The Strokes",
+        "file": "/mp3/thestrokes1251lyrics.mp3",
+        "releasedYear": 2003
+      },
+      {
+        "_id": "r6t5Zw7XM00960Lf6q1o955d5MqU",
+        "title": "Call It Fate, Call It Karma",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesCallItFateCallItKarmaLyrics.mp3",
+        "releasedYear": 2013
+      },
+      {
+        "_id": "noft14891u636arn6KQy59btJ671",
+        "title": "Chances",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesChancesLyrics.mp3",
+        "releasedYear": 2013
+      },
+      {
+        "_id": "c9Z9c780fu7i26ewLK33506LeLU4",
+        "title": "Hard to Explain",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesHardToExplainLyrics.mp3",
+        "releasedYear": 2001
+      },
+      {
+        "_id": "30GUmN257796aJ9c051bi8uO2ncR",
+        "title": "Ode to the Mets",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesOdeToTheMetsLyrics.mp3",
+        "releasedYear": 2020
+      },
+      {
+        "_id": "80Ue578x8s9RtmC0cx3pm45D2W21",
+        "title": "One Way Trigger",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesOnewaytriggerlyrics.mp3",
+        "releasedYear": 2013
+      },
+      {
+        "_id": "nNhMz6D1Xet7K169r5sa43842a03",
+        "title": "Selfless",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesSelflessLyrics.mp3",
+        "releasedYear": 2020
+      },
+      {
+        "_id": "ts52iMS2093xD3oHN8Zl2b24qo24s2k10",
+        "title": "Someday",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesSomedayLyricsHQ.mp3",
+        "releasedYear": 2002
+      },
+      {
+        "_id": "o80LI6VJ4Nd09Xwz6P31e8h91n78",
+        "title": "The Adults Are Talking",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesTheAdultsAreTalkingLyrics.mp3",
+        "releasedYear": 2020
+      },
+      {
+        "_id": "7356UIf63p5xyT86oV8B45RS3p8J",
+        "title": "Under Cover of Darkness",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesUnderCoverOfDarknessLyricsLetra.mp3",
+        "releasedYear": 2011
+      },
+      {
+        "_id": "DH6Vx92Mn9Ln8m85yh8MQ4187D35",
+        "title": "You Only Live Once",
+        "artist": "The Strokes",
+        "file": "/mp3/TheStrokesYouOnlyLiveOncelyrics.mp3",
+        "releasedYear": 2006
       }
     ]
   },
@@ -677,6 +865,83 @@
         "artist": "Bella Kay",
         "file": "/mp3/BellaKayiloveitiloveitiloveitLyrics.mp3",
         "releasedYear": 2026
+      },
+      {
+        "_id": "34PWQR5t9e5V60oG2QP60Q5ti966",
+        "title": "A Father's Lament",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKayAFathersLamentofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "iO195ITrfX0bk446C5QXn2320A04",
+        "title": "Blur",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKayBlurofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "4V5yL181mHr2z751QAqb6Kr166e1",
+        "title": "i deserve better",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKayideservebetterLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "7a87612LLm206xBlfeW6630WlB6I",
+        "title": "i deserve better",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKayideservebetterofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "p74n1C0W747QW7b6WJN8AKB12r10",
+        "title": "Karaoke",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKaykaraokeofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "0N1f64SHqS8mD099i9xPWJ236d90",
+        "title": "mindf*ck",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKaymindfckofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "iL49u9360nG0q3toV4C2pmT4w122",
+        "title": "Promise?",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKayPromiseLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "wO36k6wJ06c5pO02HGI11w6ki455",
+        "title": "Say it Say",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKaySayItSayLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "y6A25954Jp9c4mLZ99T7r3Ve63DL",
+        "title": "Steady",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKaySteadyLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "D10e01L9BS7MK9m841qN7s8q1B0A",
+        "title": "tongue",
+        "artist": "Bella Kay",
+        "file": "/mp3/BellaKaytongueofficiallyricvideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "ND12IQr3k7OC0z82LZe40b48x791",
+        "title": "The Sick",
+        "artist": "Bella Kay",
+        "file": "/mp3/TheSickBellaKayLyrics.mp3",
+        "releasedYear": 2025
       }
     ]
   },
@@ -690,6 +955,76 @@
         "artist": "Bruce Springsteen",
         "file": "/mp3/BruceSpringsteenStreetsOfMinneapolisOfficialLyricVideo.mp3",
         "releasedYear": 2026
+      },
+      {
+        "_id": "3WSe4a77501Z0A90x9XH5q7UC3ef",
+        "title": "Badlands",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenBadlandsOfficialLyricVideo.mp3",
+        "releasedYear": 1978
+      },
+      {
+        "_id": "b1S6CU9Cry5D0727MrX006J1B16r",
+        "title": "Born to Run",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenBornToRunLyrics.mp3",
+        "releasedYear": 1975
+      },
+      {
+        "_id": "QOtU1c45H6GA0351UCR5d5r02x28",
+        "title": "Dancing in the Dark",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenDancingInTheDarkHQHDwithLyrics.mp3",
+        "releasedYear": 1984
+      },
+      {
+        "_id": "b4X59d73bb7ze802tO34mt0Je86n",
+        "title": "I'll See You in My Dreams",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenIllSeeYouInMyDreamsLyricVideo.mp3",
+        "releasedYear": 2021
+      },
+      {
+        "_id": "8Idl204w2V3H9U5VM6wIfO74q041",
+        "title": "I'm on Fire",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenImOnFireLyrics.mp3",
+        "releasedYear": 1985
+      },
+      {
+        "_id": "9B1t9n0822116XN20VYZAeR6wcR4",
+        "title": "My Hometown",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenMyhometownLyrics.mp3",
+        "releasedYear": 1985
+      },
+      {
+        "_id": "zb341a4Qts6e2628MP63fPI9s82o",
+        "title": "Sherry Darling",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenSherryDarlingLyrics.mp3",
+        "releasedYear": 1980
+      },
+      {
+        "_id": "n3n5Y88pBs9Ps16nD754H6770YyT",
+        "title": "Streets of Philadelphia",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/BruceSpringsteenStreetsOfPhiladelphiaLyrics.mp3",
+        "releasedYear": 1994
+      },
+      {
+        "_id": "402UV9YKk37A8AJI2T9h181x9R7l",
+        "title": "The River",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/TheRiverBruceSpringsteenLyricsOnScreen.mp3",
+        "releasedYear": 1980
+      },
+      {
+        "_id": "84Mx666406TRsA8xA1KlY943J8DQ",
+        "title": "Tougher Than the Rest",
+        "artist": "Bruce Springsteen",
+        "file": "/mp3/Tougherthantherest.BruceSpringsteen.Lyrics.mp3",
+        "releasedYear": 1987
       }
     ]
   },
@@ -702,6 +1037,62 @@
         "title": "Riptides",
         "artist": "Death Cab for Cutie",
         "file": "/mp3/DeathCabforCutieRiptidesLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "Ur510M7KU9Ns623I3hNO929hKc53",
+        "title": "Envy the Birds",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieEnvytheBirdsFullAlbumStream.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "a2ACD709Hqc76035ey1o514CtsM3",
+        "title": "How Heavenly A State",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieHowHeavenlyAStateOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "644h39nW7D1qAXS0q03y4Bw5p3L9",
+        "title": "I Built You A Tower",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieIBuiltYouAToweraFullAlbumStream.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "1c8f1J8Lx2Qt2G565Q5e53aTI37o",
+        "title": "Pep Talk",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutiePepTalkFullAlbumStream.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "7rl6S01I37aJ0H1G75Pd7C17kYT7",
+        "title": "Punching the Flowers",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutiePunchingtheFlowersLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "1eC2y70oH4m835eT77p6W7TLLx11",
+        "title": "Stone Over Water",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieStoneOverWaterLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "B8tl09HRlD1T6Mp8tO5Vq8618866",
+        "title": "Stone Over Water",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieStoneOverWaterOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "heU71A7au0U85JL84kh047nJ20p9",
+        "title": "The Flavor of Metal",
+        "artist": "Death Cab for Cutie",
+        "file": "/mp3/DeathCabforCutieTheFlavorofMetalFullAlbumStream.mp3",
         "releasedYear": 2026
       }
     ]
@@ -716,6 +1107,118 @@
         "artist": "Kacey Musgraves",
         "file": "/mp3/KaceyMusgravesDrySpellLyrics.mp3",
         "releasedYear": 2026
+      },
+      {
+        "_id": "bq8476Xh48W62e8enI66iN70Dbo3",
+        "title": "Everybody Wants to Be a Cowboy",
+        "artist": "Kacey Musgraves feat. Billy Strings",
+        "file": "/mp3/KaceyMusgravesBillyStringsEverybodyWantsToBeACowboyOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "Sl9q18UB8dr24NQ5KJi81e4K6143",
+        "title": "Horses and Divorces",
+        "artist": "Kacey Musgraves & Miranda Lambert",
+        "file": "/mp3/KaceyMusgravesAndMirandaLambertHorsesandDivorcesLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "R9ML6838T3dlo780PiT3l62RSb04",
+        "title": "Mexico Honey",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesMexicoHoneyOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "5t5boR7e224enJ28989T3sp5cS4A",
+        "title": "Slow Burn",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesSlowBurnWithLyrics.mp3",
+        "releasedYear": 2018
+      },
+      {
+        "_id": "Q0zR8J4s6N53I4HV10VV98t9l1H3",
+        "title": "The Architect",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesTheArchitectLyrics.mp3",
+        "releasedYear": 2024
+      },
+      {
+        "_id": "nLn602n1I56iJ5N2oV94K5W16Q1I",
+        "title": "Loneliest Girl",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesLoneliestGirlOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "743dxY5728We1HKD7Mmx0w78nZ30",
+        "title": "Biscuits",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesBiscuitsOfficialLyricVideo.mp3",
+        "releasedYear": 2015
+      },
+      {
+        "_id": "9I6Cehiwd397488mX80k15wr4U2q",
+        "title": "Butterflies",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesButterfliesLyrics.mp3",
+        "releasedYear": 2018
+      },
+      {
+        "_id": "cS358d4e1Uuh17J933L08VdG2Z9A",
+        "title": "Follow Your Arrow",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesFollowYourArrowOfficialLyricVideo.mp3",
+        "releasedYear": 2013
+      },
+      {
+        "_id": "One0UKK1627pO72q61sp372m74IQ",
+        "title": "Golden Hour",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesGoldenHourLyricsFullLyricVideo!.mp3",
+        "releasedYear": 2018
+      },
+      {
+        "_id": "n640q40x554c398JBe9z1ewlReT8",
+        "title": "High Horse",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesHighHorseLyricsGoldenHour2018.mp3",
+        "releasedYear": 2018
+      },
+      {
+        "_id": "8T57ubtc1mP3t1iub5072R9nn441",
+        "title": "I Believe In Ghosts",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesIBelieveInGhostsOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "kmD15p2Gm65H1epAi40YC800V9R99W11",
+        "title": "Merry Go 'Round",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesMerryGoRoundWithLyrics.mp3",
+        "releasedYear": 2012
+      },
+      {
+        "_id": "98K2eI6cLq0db9BtB9f69S85761H",
+        "title": "Pageant Material",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesPageantMateriallyrics.mp3",
+        "releasedYear": 2015
+      },
+      {
+        "_id": "ssz57Z37q9q768RN1u7974D1yfML",
+        "title": "Rainbow",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesRainbowLyrics.mp3",
+        "releasedYear": 2019
+      },
+      {
+        "_id": "2MG6bwo554Hz14i133XGT12C60sf",
+        "title": "simple times",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KACEYMUSGRAVESsimpletimesofficiallyricvideo.mp3",
+        "releasedYear": 2021
       }
     ]
   },
@@ -728,6 +1231,136 @@
         "title": "Runway",
         "artist": "Lady Gaga & Doechii",
         "file": "/mp3/LadyGagaDoechiiRunwayLyrics.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "Ac9wT2WJ80Q2x31Jr69C2NqK2392",
+    "name": "Billy Strings",
+    "songs": [
+      {
+        "_id": "bq8476Xh48W62e8enI66iN70Dbo3",
+        "title": "Everybody Wants to Be a Cowboy",
+        "artist": "Kacey Musgraves feat. Billy Strings",
+        "file": "/mp3/KaceyMusgravesBillyStringsEverybodyWantsToBeACowboyOfficialLyricVideo.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "qz24D89ZIK4L212mywd600Ke2M68",
+    "name": "Miranda Lambert",
+    "songs": [
+      {
+        "_id": "Sl9q18UB8dr24NQ5KJi81e4K6143",
+        "title": "Horses and Divorces",
+        "artist": "Kacey Musgraves & Miranda Lambert",
+        "file": "/mp3/KaceyMusgravesAndMirandaLambertHorsesandDivorcesLyrics.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "I5c03X5S2reuB809y7a5P99n00LG",
+    "name": "Ben&Ben",
+    "songs": [
+      {
+        "_id": "8QC5J2W415d3whAtbr75Kb91426J",
+        "title": "Kathang Isip",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenKathangIsipLyrics.mp3",
+        "releasedYear": 2017
+      },
+      {
+        "_id": "se95Kkh4rML3274596C6d3bzfU01",
+        "title": "Langyang Pag-Ibig",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenLangyangPagIbigLyrics.mp3",
+        "releasedYear": 2022
+      },
+      {
+        "_id": "fea07R518fTd3y1Gcep857R4R937",
+        "title": "Leaves",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenLeavesLyrics.mp3",
+        "releasedYear": 2017
+      },
+      {
+        "_id": "2b65N88H2eNt7h40e56l01en6tQo",
+        "title": "Lifetime",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenLifetimeLyrics.mp3",
+        "releasedYear": 2020
+      },
+      {
+        "_id": "5bTeu7yz2Dw005C32Y5CT22A310Y",
+        "title": "Paninindigan Kita",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenPaninindiganKitaOfficialLyricVideo.mp3",
+        "releasedYear": 2022
+      },
+      {
+        "_id": "UVYc15o0A5Pi34qr095Arn462z16",
+        "title": "Saranggola",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenSaranggolaLyrics.mp3",
+        "releasedYear": 2025
+      },
+      {
+        "_id": "1Se7DSPQ7D3d30U89W798Wy19Ry7",
+        "title": "Sa Susunod Na Habang Buhay",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenSaSusunodNaHabangBuhayLyrics.mp3",
+        "releasedYear": 2020
+      },
+      {
+        "_id": "bb9a7aRpu02s4cta8Y88wQ5P8668k908",
+        "title": "The Ones We Once Loved",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenTheOnesWeOnceLovedOfficialLyricVideo.mp3",
+        "releasedYear": 2022
+      },
+      {
+        "_id": "H06517l8H4f6L6cG2M8o4oo2eb9K",
+        "title": "Make It With You",
+        "artist": "Ben&Ben",
+        "file": "/mp3/MakeItWithYouBenAndBenLyrics.mp3",
+        "releasedYear": 2019
+      },
+      {
+        "_id": "dL609D7fsx2w60oT938037ckN2si",
+        "title": "Baybayin",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BaybayinBenAndBen.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "h4dmteR0eRf5243ee37b8Y7G4307",
+        "title": "Sumabay Ka",
+        "artist": "Ben&Ben, KZ Tandingan & Al James",
+        "file": "/mp3/BenAndBenKZTandinganAndAlJamesSumabayKa.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "DuG31yrZO3k3T7y25m0P93t17d78",
+        "title": "Autumn",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenAutumnOfficialLyricVideo.mp3",
+        "releasedYear": 2023
+      },
+      {
+        "_id": "URXPD327969i04TTK65Wu5JP1e18",
+        "title": "Duyan",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenDuyanLyrics.mp3",
+        "releasedYear": 2026
+      },
+      {
+        "_id": "n9hH8Q88Um7yQ7mJ5l374A7P8d00",
+        "title": "Harinawa",
+        "artist": "Ben&Ben",
+        "file": "/mp3/BenAndBenHarinawa.mp3",
         "releasedYear": 2026
       }
     ]
@@ -873,6 +1506,32 @@
         "artist": "Vice feat. Mike Taylor",
         "file": "/mp3/ViceWorldIsOurPlaygroundfeatMikeTaylorLyricVideo.mp3",
         "releasedYear": 2013
+      }
+    ]
+  },
+  {
+    "_id": "156Zdzrr2MYH701P1q58IJ2p83Z2",
+    "name": "KZ Tandingan",
+    "songs": [
+      {
+        "_id": "h4dmteR0eRf5243ee37b8Y7G4307",
+        "title": "Sumabay Ka",
+        "artist": "Ben&Ben, KZ Tandingan & Al James",
+        "file": "/mp3/BenAndBenKZTandinganAndAlJamesSumabayKa.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "6G6WK9U90PR4S12r314J37RVtq2M",
+    "name": "Al James",
+    "songs": [
+      {
+        "_id": "h4dmteR0eRf5243ee37b8Y7G4307",
+        "title": "Sumabay Ka",
+        "artist": "Ben&Ben, KZ Tandingan & Al James",
+        "file": "/mp3/BenAndBenKZTandinganAndAlJamesSumabayKa.mp3",
+        "releasedYear": 2026
       }
     ]
   },
@@ -12027,6 +12686,45 @@
     ]
   },
   {
+    "_id": "0XB3Mzc6f7I5O72IM44B1B8TL673",
+    "name": "Mastodon",
+    "songs": [
+      {
+        "_id": "I0qRi2Mo91T7Ye340CK864X48e9b",
+        "title": "Your Ghost Again",
+        "artist": "Mastodon",
+        "file": "/mp3/MastodonYourGhostAgainLyrics.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "SIL196S9k3005nT14e24J68afKbn",
+    "name": "Mitski",
+    "songs": [
+      {
+        "_id": "52Au40DZ91493T8iwIJ5Mb8OhU54",
+        "title": "I'll Change for You",
+        "artist": "Mitski",
+        "file": "/mp3/MitskiIllChangeforYou.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "7T7G2lcyex7M7739O66Sh93H8M4A",
+    "name": "Robyn",
+    "songs": [
+      {
+        "_id": "Zo3l39Loiq7T36UZ48Bf7V1r3688",
+        "title": "Talk to Me",
+        "artist": "Robyn",
+        "file": "/mp3/RobynTalkToMeLyrics.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
     "_id": "UeJ85fvMN5ETbB8PkM4Bkdgv",
     "name": "Thousand Foot Krutch",
     "songs": [
@@ -12036,6 +12734,32 @@
         "artist": "Thousand Foot Krutch",
         "file": "/mp3/ThousandFootKrutchCourtesyCallOfficialAudio.mp3",
         "releasedYear": 2012
+      }
+    ]
+  },
+  {
+    "_id": "eb1HU292IXrB3ML043M6027NcU13",
+    "name": "Denzel Curry",
+    "songs": [
+      {
+        "_id": "30ZHyCPs278y3Z317YDa2Tz46H37",
+        "title": "Hive Mind",
+        "artist": "Knocked Loose feat. Denzel Curry",
+        "file": "/mp3/KnockedLooseftDenzelCurryHiveMindLYRICS.mp3",
+        "releasedYear": 2026
+      }
+    ]
+  },
+  {
+    "_id": "42wxJ03V617366HlMQ94AJB7R6KG",
+    "name": "Knocked Loose",
+    "songs": [
+      {
+        "_id": "30ZHyCPs278y3Z317YDa2Tz46H37",
+        "title": "Hive Mind",
+        "artist": "Knocked Loose feat. Denzel Curry",
+        "file": "/mp3/KnockedLooseftDenzelCurryHiveMindLYRICS.mp3",
+        "releasedYear": 2026
       }
     ]
   },
@@ -13408,6 +14132,13 @@
         "artist": "Dishwalla",
         "file": "/mp3/EVERYLITTLETHINGlyricsDishwalla.mp3",
         "releasedYear": 2002
+      },
+      {
+        "_id": "caK4q1i01X11Obp2Z4z9W47p82K2",
+        "title": "Middle of Nowhere",
+        "artist": "Kacey Musgraves",
+        "file": "/mp3/KaceyMusgravesMiddleofNowhereLyrics.mp3",
+        "releasedYear": 2026
       }
     ]
   },

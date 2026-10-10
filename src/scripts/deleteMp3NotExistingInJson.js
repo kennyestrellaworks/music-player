@@ -19,8 +19,8 @@ if (!Array.isArray(music)) {
 
 const filenamesInJson = new Set(
   music
-    .filter((track) => track && typeof track.file === "string")
-    .map((track) => track.file.split(/[\\/]/).pop()),
+    .filter((track) => track && typeof track.url === "string")
+    .map((track) => track.url.split(/[\\/]/).pop()),
 );
 const mp3Filenames = readdirSync(mp3Directory).filter((filename) =>
   filename.toLowerCase().endsWith(".mp3"),
@@ -45,7 +45,7 @@ if (missingFilenames.length === 0) {
 
   try {
     confirmation = await readline.question(
-      '\nType DELETE to permanently remove these files, or press Enter to cancel: ',
+      "\nType DELETE to permanently remove these files, or press Enter to cancel: ",
     );
   } finally {
     readline.close();

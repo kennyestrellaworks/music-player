@@ -16,8 +16,8 @@ if (!Array.isArray(music)) {
 
 const filenamesInJson = new Set(
   music
-    .filter((track) => track && typeof track.file === "string")
-    .map((track) => track.file.split(/[\\/]/).pop()),
+    .filter((track) => track && typeof track.url === "string")
+    .map((track) => track.url.split(/[\\/]/).pop()),
 );
 const mp3Filenames = readdirSync(mp3Directory).filter((filename) =>
   filename.toLowerCase().endsWith(".mp3"),
@@ -26,7 +26,9 @@ const missingFilenames = mp3Filenames.filter(
   (filename) => !filenamesInJson.has(filename),
 );
 
-console.log(`MP3 files missing from music-local.json (${missingFilenames.length}):`);
+console.log(
+  `MP3 files missing from music-local.json (${missingFilenames.length}):`,
+);
 
 if (missingFilenames.length === 0) {
   console.log("None found.");

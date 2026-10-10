@@ -25,12 +25,12 @@ const isSameSong = (firstSong, secondSong) => {
 
   return (
     firstSong._id === secondSong._id ||
-    (firstSong.file && secondSong.file && firstSong.file === secondSong.file)
+    (firstSong.url && secondSong.url && firstSong.url === secondSong.url)
   );
 };
 
 const getSongKey = (song, index) => {
-  const baseKey = song?._id || song?.file || song?.title || `song-${index}`;
+  const baseKey = song?._id || song?.url || song?.title || `song-${index}`;
 
   return `${baseKey}-${index}`;
 };
@@ -78,7 +78,7 @@ export const MusicList = ({
     }
 
     onSongSelect?.(song);
-    audio.src = song.file;
+    audio.src = song.url;
     audio.play().catch(() => {
       // Browser may block autoplay until the user interacts; we already handle the click.
     });
@@ -126,11 +126,13 @@ export const MusicList = ({
     const normalizedSearch = nextValue.trim().toLowerCase();
     const nextSelectedArtist =
       (artists ?? []).find(
-        (artist) =>
-          artist?.name?.trim().toLowerCase() === normalizedSearch,
+        (artist) => artist?.name?.trim().toLowerCase() === normalizedSearch,
       ) ?? null;
 
-    if (!selectedArtist || normalizedSearch !== selectedArtist.name?.trim().toLowerCase()) {
+    if (
+      !selectedArtist ||
+      normalizedSearch !== selectedArtist.name?.trim().toLowerCase()
+    ) {
       setSelectedArtist(nextSelectedArtist);
     }
   };
@@ -245,38 +247,43 @@ export const MusicList = ({
               </button>
             ))
           )
-        ) : hasSearchQuery && (selectedArtist ? selectedArtistSongs.length === 0 : filteredMusic.length === 0) ? (
+        ) : hasSearchQuery &&
+          (selectedArtist
+            ? selectedArtistSongs.length === 0
+            : filteredMusic.length === 0) ? (
           <p className="music-list__empty">No matching songs found.</p>
         ) : (
-          (selectedArtist ? selectedArtistSongs : filteredMusic).map((song, index) => {
-            const isActive = isSameSong(currentSong, song);
-            const songKey = getSongKey(song, index);
+          (selectedArtist ? selectedArtistSongs : filteredMusic).map(
+            (song, index) => {
+              const isActive = isSameSong(currentSong, song);
+              const songKey = getSongKey(song, index);
 
-            return (
-              <button
-                key={songKey}
-                ref={isActive ? activeSongRef : undefined}
-                type="button"
-                className={`music-list__item ${isActive ? "is-active" : ""}`}
-                aria-label={`Play ${song.title} by ${song.artist}`}
-                aria-pressed={isActive}
-                onClick={() => handlePlaySong(song)}
-              >
-                <span className="music-list__title">
-                  {truncateTitle(song.title)}
-                </span>
-                <span className="music-list__artist-name">{song.artist}</span>
-                {isActive && isPlaying ? (
-                  <span className="music-list__playing" aria-label="Playing">
-                    <span />
-                    <span />
-                    <span />
-                    <span />
+              return (
+                <button
+                  key={songKey}
+                  ref={isActive ? activeSongRef : undefined}
+                  type="button"
+                  className={`music-list__item ${isActive ? "is-active" : ""}`}
+                  aria-label={`Play ${song.title} by ${song.artist}`}
+                  aria-pressed={isActive}
+                  onClick={() => handlePlaySong(song)}
+                >
+                  <span className="music-list__title">
+                    {truncateTitle(song.title)}
                   </span>
-                ) : null}
-              </button>
-            );
-          })
+                  <span className="music-list__artist-name">{song.artist}</span>
+                  {isActive && isPlaying ? (
+                    <span className="music-list__playing" aria-label="Playing">
+                      <span />
+                      <span />
+                      <span />
+                      <span />
+                    </span>
+                  ) : null}
+                </button>
+              );
+            },
+          )
         )}
       </div>
     </div>

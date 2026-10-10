@@ -4,9 +4,11 @@
 
 .artwork {
   position: relative;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 100svh;
-  place-items: center;
+  padding-top: clamp(24px, 5vh, 80px);
   overflow: hidden;
   isolation: isolate;
   background: #0d140d;
@@ -26,72 +28,67 @@
 .artwork__composition {
   position: relative;
   width: min(94vw, 1440px);
-  height: min(92svh, 920px);
+  /* height: min(92svh, 920px); */
+  margin: 0 auto;
   animation: reveal 900ms ease-out both;
 }
 
 .artwork__head {
   position: relative;
-  z-index: 2;
+  z-index: 60;
   display: block;
-  width: 500px;
+  width: 420px;
   height: 100%;
   margin: 0 auto;
   object-fit: contain;
   filter: drop-shadow(0 28px 46px rgba(0, 0, 0, 0.35));
 }
 
-.artwork__forehead {
+.left-panel,
+.right-panel {
   position: absolute;
-  z-index: 4;
-  top: -91px;
-  left: 0;
-  right: 0;
-  width: 399px;
-  height: 100%;
-  margin: auto;
-  object-fit: contain;
-}
-
-.left-panel {
-  position: absolute;
-  z-index: 3;
-  top: 200px;
-  left: 0;
+  z-index: 30;
+  top: 144px;
   width: 537px;
-  height: 249px;
-  overflow: hidden;
+  height: 301px;
   transition: width 220ms ease;
 }
 
-.right-panel {
-  position: absolute;
-  z-index: 3;
-  top: 200px;
-  right: 0;
-  width: 537px;
-  height: 249px;
+.left-panel {
+  left: 60px;
 }
 
+.right-panel {
+  right: 60px;
+}
+
+.panel-wrap__left,
 .panel-wrap__right {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   height: 100%;
   width: 100%;
 }
 
 .panel-wrap__left {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  height: 100%;
-  width: 100%;
+}
+
+.panel-wrap__right {
+  justify-content: flex-start;
+}
+
+.right-panel .artwork__panel,
+.left-panel .artwork__panel {
+  position: relative;
+  top: auto;
+  right: auto;
+  /* height: 100%; */
 }
 
 .artwork__panel {
   position: absolute;
-  z-index: 3;
+  z-index: 30;
   top: 15%;
   height: 100%;
   padding: 0;
@@ -99,50 +96,25 @@
   background: transparent;
 }
 
-.left-panel .artwork__panel {
+.left-panel__content,
+.right-panel__content {
+  width: 70%;
   position: relative;
-  top: auto;
-  left: auto;
-  height: 100%;
-}
-
-.right-panel .artwork__panel {
-  position: relative;
-  top: auto;
-  right: auto;
-  height: 100%;
+  transition: width 220ms ease;
 }
 
 .left-panel__content,
 .right-panel__content {
-  width: 60%;
-  position: relative;
+  /* overflow: hidden; */
+  height: 232px;
 }
 
-.left-panel__content {
-  overflow: hidden;
-  height: 249px;
-  transition: width 220ms ease;
-}
-
-.left-panel__content.is-collapsed {
+.left-panel__content.is-collapsed,
+.right-panel__content.is-collapsed,
+.panel-content__left.is-collapsed,
+.panel-content__right.is-collapsed {
   width: 0;
-}
-
-.music-list {
-  position: absolute;
-  top: 0;
-  z-index: 20;
-}
-
-.right-panel__content {
   overflow: hidden;
-  height: 249px;
-  transition: width 220ms ease;
-}
-
-.right-panel__content.is-collapsed {
-  width: 0;
 }
 
 .panel-open__left {
@@ -153,7 +125,6 @@
   padding: 0;
   border: 0;
   background: transparent;
-
   object-fit: fill;
 }
 
@@ -181,7 +152,7 @@
 
 .artwork__panel--left,
 .artwork__panel--right {
-  height: 316px;
+  height: 255px;
   top: 139px;
 }
 
@@ -192,8 +163,8 @@
 .panel-button__arrow-left,
 .panel-button__arrow-right {
   position: absolute;
-  top: 100px;
-  z-index: 10;
+  top: 152px;
+  z-index: 30;
   background-color: transparent;
   border: none;
   height: 40px;
@@ -203,17 +174,28 @@
 
 .panel-button__arrow-left svg,
 .panel-button__arrow-right svg {
-  fill: rgb(94, 94, 94);
-  transform: rotate(0deg);
+  fill: #a8ee4d;
+  width: 12px;
   transform-origin: center;
   transition:
     fill 220ms ease,
     transform 220ms ease;
 }
 
-.panel-button__arrow-left[aria-expanded="false"] svg,
-.panel-button__arrow-right[aria-expanded="false"] svg {
+.panel-button__arrow-left svg {
+  transform: rotate(-9deg);
+}
+
+.panel-button__arrow-right svg {
+  transform: rotate(9deg) scaleX(-1);
+}
+
+.panel-button__arrow-left[aria-expanded="false"] svg {
   transform: rotate(180deg);
+}
+
+.panel-button__arrow-right[aria-expanded="false"] svg {
+  transform: rotate(180deg) scaleX(-1);
 }
 
 .panel-button__arrow-left:hover svg,
@@ -222,17 +204,17 @@
 }
 
 .panel-button__arrow-left {
-  left: -29px;
+  left: -25px;
 }
 
 .panel-button__arrow-right {
-  right: -29px;
+  right: -25px;
 }
 
 .panel-button {
   position: absolute;
   z-index: 3;
-  top: 64px;
+  top: 90px;
   height: 100%;
   padding: 0;
   border: 0;
@@ -241,15 +223,73 @@
 
 .panel-button__left,
 .panel-button__right {
-  height: 112px;
+  height: 134px;
 }
 
 .panel-button__left {
-  left: -30px;
+  left: -40px;
 }
 
 .panel-button__right {
-  right: -30px;
+  right: -40px;
+}
+
+.panel-button__top-ear {
+  z-index: 25;
+}
+
+.panel-button__middle-ear-left {
+  left: -28px;
+}
+
+.panel-button__middle-ear-right {
+  right: -28px;
+}
+
+.panel-button__middle-ear {
+  z-index: 20;
+}
+.panel-button__back-ear {
+  z-index: 15;
+}
+.panel-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  transition:
+    width 220ms ease,
+    opacity 220ms ease;
+}
+
+.panel-content__right {
+  position: absolute;
+  left: 82px;
+  width: 309px;
+  height: 100%;
+  z-index: 50;
+  /* overflow: hidden; */
+  transition:
+    width 220ms ease,
+    left 220ms ease,
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.panel-content__left {
+  position: absolute;
+  right: 82px;
+  /* background-color: gray; */
+  width: 309px;
+  height: 100%;
+  z-index: 50;
+  /* overflow: hidden; */
+  transition:
+    width 220ms ease,
+    right 220ms ease,
+    opacity 220ms ease,
+    transform 220ms ease;
 }
 
 .monitor {
